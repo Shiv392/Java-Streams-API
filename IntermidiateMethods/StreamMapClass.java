@@ -3,10 +3,11 @@ package IntermidiateMethods;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
+//stream.map(callback function) : map() method is used to perform some operation on each element of the 
+//stream and returns new stream with modified element.
+
 public class StreamMapClass {
     public static void main(String[] args) {
-        //map() add operation to each element of the streams
-        //like multiply each element by 2 or likewise.
 
         Integer[] arr = {1,2,3,4,5};
 
