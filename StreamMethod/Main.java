@@ -6,17 +6,29 @@ import java.util.List;
 import java.util.stream.Stream;
 import java.util.Set;
 
+class Person{
+    String name;
+    int age;
+    Person(String name,int age){
+        this.name = name;
+        this.age = age;
+    }
+}
+
 class Main{
     public static void main(String[] args) {
 
         //DEFINE streams with default value
+        //we can define stream with default value using Stream.of() method. 
         Stream<Integer>streams = Stream.of(10,20,30,40,50);
         
         //1. create streams from array------>
+        //we can convert array into stream using Arrays.stream() method. 
         Integer[] arr = {1,2,3,4,5};
         Stream<Integer>arrStream = Arrays.stream(arr);
 
         //2. Create stream from collection framework : Arraylist
+        //we can convert collection frameword into stream using collection.stream() method. 
         List<Integer>list = List.of(1,2,3,4,5);
         Stream<Integer>listStream = list.stream();
 
@@ -31,5 +43,15 @@ class Main{
         //4. Create stream from collection framework : HashSet;
         Set<Integer>set = Set.of(10,30,40,50,60);
         Stream<Integer>setStream = set.stream();
+
+        //5. converlt string to stream
+        String name = "Shiv Soni";
+        Stream<Character>charStream = name.chars().mapToObj(c -> (char)c);
+
+        //covert objcet into stream
+        Person p1 = new Person("Shiv",22);
+        Person p2 = new Person("Soni",23);
+        List<Person>personList = List.of(p1, p2);
+        Stream<Person>personStream = personList.stream();
     }
 }
