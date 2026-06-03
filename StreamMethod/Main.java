@@ -53,5 +53,16 @@ class Main{
         Person p2 = new Person("Soni",23);
         List<Person>personList = List.of(p1, p2);
         Stream<Person>personStream = personList.stream();
+
+        //convert Stream to array list 
+        Stream<Integer>stream = Stream.of(1,2,3,4,5);
+        //convert usin stream.toList();
+        List<Integer>streamList = stream.toList();
+        PrintList(streamList);
+    }
+
+    public static void PrintList(List<Integer>list){
+        list.forEach(num-> System.out.print(num+" "));
+        System.out.println();
     }
 }
