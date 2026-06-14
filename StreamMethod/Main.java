@@ -27,6 +27,12 @@ class Main{
         Integer[] arr = {1,2,3,4,5};
         Stream<Integer>arrStream = Arrays.stream(arr);
 
+        //create stream from int type array
+        int[] temparr = {1,2,3};
+        //here Arrays.stream(arr) returns intStream 
+        //stream().boxed() convert int type to Integer type 
+        Stream<Integer>IntStream = Arrays.stream(temparr).boxed();
+
         //2. Create stream from collection framework : Arraylist
         //we can convert collection frameword into stream using collection.stream() method. 
         List<Integer>list = List.of(1,2,3,4,5);
