@@ -1,4 +1,4 @@
-package TerminalMethods;
+package ReductionOperations/TerminalMethods;
 
 import java.util.Arrays;
 import java.util.stream.Stream;
@@ -7,6 +7,7 @@ public class MinMaxClass {
     public static void main(String[] args) {
         
         //min() return the min element from the streams.
+        //returns OptionalDouble/OptionalInt 
 
         //here min() works differently for primitive and non primivite data type. 
         //if stream is intStream(premetive ) then we can directly convert this using getAsInt();
@@ -14,7 +15,7 @@ public class MinMaxClass {
         int[] arr = {1,2,3};
         int min = Arrays.stream(arr).min().getAsInt();
         System.out.println("Min element from intStream: "+min);
-        
+
         //here if arrays is empty so min() return throw expections that's why we can use orElse();
         int min2 = Arrays.stream(arr).min().orElse(Integer.MIN_VALUE);
         System.out.println("Min element from intStream: "+min2);
