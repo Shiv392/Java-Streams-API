@@ -8,6 +8,10 @@ public class MaxMin {
         
         //first get the max number
         int[] arr = {3,4,1,33, 45, 100};
+
+        //here input type is premetive so that we can directly use min() & max method without
+        //convert into int also comparator method will also not be required. 
+        
         int max = Arrays.stream(arr).max().getAsInt();
         System.out.println("Max number from premetive data type: "+max);
 

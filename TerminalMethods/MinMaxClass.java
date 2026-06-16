@@ -14,6 +14,7 @@ public class MinMaxClass {
         int[] arr = {1,2,3};
         int min = Arrays.stream(arr).min().getAsInt();
         System.out.println("Min element from intStream: "+min);
+        
         //here if arrays is empty so min() return throw expections that's why we can use orElse();
         int min2 = Arrays.stream(arr).min().orElse(Integer.MIN_VALUE);
         System.out.println("Min element from intStream: "+min2);
