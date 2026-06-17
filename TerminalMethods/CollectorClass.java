@@ -7,6 +7,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+// collect() is a terminal operation that accumulates stream elements into a collection or another result container such as List, Set, Map, or grouped data.
+
 public class CollectorClass {
     public static void main(String[] args) {
 
