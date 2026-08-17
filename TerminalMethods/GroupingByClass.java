@@ -20,6 +20,7 @@ public class GroupingByClass {
       private String name;
       private double salary;
       private String department;
+      
       Employee(String name, double salary, String department){
         this.name = name;
         this.salary = salary;
