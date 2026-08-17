@@ -3,6 +3,7 @@ package StreamMethod;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import java.util.Set;
 
@@ -26,6 +27,10 @@ class Main{
         //we can convert array into stream using Arrays.stream() method. 
         Integer[] arr = {1,2,3,4,5};
         Stream<Integer>arrStream = Arrays.stream(arr);
+
+        //convert arr to intStream
+        int[]arr2 = {1,2,3,4,5};
+        IntStream intStream = Arrays.stream(arr2);
 
         //create stream from int type array
         int[] temparr = {1,2,3};
