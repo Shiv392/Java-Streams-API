@@ -20,7 +20,7 @@ public class DropWhileClass{
     public static void main(String[]args){
         List<Integer>list = List.of(1,2,3,4,5,2,1);
         Stream<Integer>dropWhileStream = list.stream().dropWhile(num->num<5);
-        dropWhile.forEach(System.out::println);
+        dropWhileStream.forEach(System.out::println);
 
         //output : 5,2,1
     }

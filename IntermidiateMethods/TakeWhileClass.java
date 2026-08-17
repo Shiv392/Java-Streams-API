@@ -1,6 +1,7 @@
 package IntermidiateMethods;
 
-import java.util.stream.Streams;
+import java.util.stream.Stream;
+import java.io.PrintStream;
 import java.util.List;
 
 //takeWhile is intermidiate operator that introduced in Java9
@@ -26,8 +27,12 @@ public class TakeWhileClass{
   public static void main(String[]args){
     List<Integer>list = List.of(1,2,3,4,5,1,2,3);
     Stream<Integer>stream = list.stream().takeWhile(num-> num<5);
-    PrintStram(stream);
+    PrintStream(stream);
 
     //output : 1,2,3,4
+  }
+
+  public static void PrintStream(Stream<Integer>stream){
+    stream.forEach(num-> System.out.print(num+" "));
   }
 }

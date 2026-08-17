@@ -34,7 +34,7 @@ class Main{
 
         //create stream from int type array
         int[] temparr = {1,2,3};
-        //here Arrays.stream(arr) returns intStream 
+        //here Arrays.stream(arr) returns <intStream>
         //stream().boxed() convert int type to Integer type 
         Stream<Integer>IntStream = Arrays.stream(temparr).boxed();
 

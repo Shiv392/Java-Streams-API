@@ -1,6 +1,8 @@
 package IntermidiateMethods;
 
 import java.util.List;
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 //parallelStream basically breaks streams into sub part
 //then execute this different Cores of the CPU concurrently 
@@ -28,7 +30,7 @@ public class ParellelStreamClass{
     }
 
     public static void PrintStram(Stream<Integer>stream){
-      stream.forEach(num-> System.out.println("Thread: " + Thread.currentThread().getName() + " -> Value: " + num)));
+      stream.forEach(num-> System.out.println("Thread: " + Thread.currentThread().getName() + " -> Value: " + num));
     }
 }
 

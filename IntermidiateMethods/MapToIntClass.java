@@ -18,13 +18,13 @@ public class MapToIntClass{
         //like sum(), average(), min() & max();
 
        int sum = stream.mapToInt(x-> x).sum();
-       int min = stream.mapToInt(x-> x).min();
-       int max = stream.mapToInt(x->x).max();
+       int min = stream.mapToInt(x-> x).min().orElse(Integer.MAX_VALUE);
+       int max = stream.mapToInt(x->x).max().orElse(Integer.MIN_VALUE);
 
        //2 example : Parsing Strings to integers
        List<String>numericStrings = List.of("10","20","30");
-       int sum = numericStrings.stream().mapToInt(Integer::parseInt).sum();
-       System.out.println("sum of string numbers: "+sum);
+       int sum2 = numericStrings.stream().mapToInt(Integer::parseInt).sum();
+       System.out.println("sum of string numbers: "+sum2);
     }
 }
 
