@@ -10,19 +10,12 @@ package TerminalMethods;
 // //output 
 // Development == [a,b,c]
 // QA = [p,q]
-
-import java.util.*;
-import java.util.stream.Stream;
-import java.util.Arrays;
-import java.util.Set;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Stack;
-import java.util.Comparator;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.ArrayList;
 
-public class Main {
+public class GroupingByClass {
     public static class Employee{
       private String name;
       private double salary;
@@ -36,9 +29,9 @@ public class Main {
       public double getSalary(){return this.salary;}
       public String getDepartment(){return this.department;}
     }
+
     public static void main(String[] args) {
      List<Employee>employeeList = new ArrayList<>();
-
      employeeList.add(new Employee("ShivSoni", 100000.00, "Development"));
      employeeList.add(new Employee("Peter", 85000.00, "Development"));
      employeeList.add(new Employee("John", 75000.00, "QA"));

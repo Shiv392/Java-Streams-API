@@ -1,27 +1,19 @@
-package ReductionOperations/TerminalMethods;
+package TerminalMethods.ReductionOperations;
 
 //sum() used to return signal value of the stream i.e sum of the stream elements.
 //it returns value not optionalValue so no need to use orElse here.
-
 //to use sum(), first we have to convert into mapToInt() | mapToDouble() | maptoLong();
-
 //get the sum of salary of the development department employee. 
-
-import java.util.*;
-import java.util.stream.Stream;
-import java.util.Arrays;
-import java.util.Set;
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
-import java.util.Comparator;
 
-public class Main {
-    public static class Sum{
+public class Sum {
+    public static class Employee{
       private String name;
       private double salary;
       private String department;
-      Employee(String name, double salary, String department){
+
+      public Employee(String name, double salary, String department){
         this.name = name;
         this.salary = salary;
         this.department = department;
@@ -30,9 +22,9 @@ public class Main {
       public double getSalary(){return this.salary;}
       public String getDepartment(){return this.department;}
     }
+
     public static void main(String[] args) {
      List<Employee>employeeList = new ArrayList<>();
-
      employeeList.add(new Employee("ShivSoni", 100000.00, "Development"));
      employeeList.add(new Employee("Peter", 85000.00, "Development"));
      employeeList.add(new Employee("John", 75000.00, "QA"));

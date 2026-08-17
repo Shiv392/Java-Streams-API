@@ -1,4 +1,4 @@
-package ReductionOperations/TerminalMethods;
+package TerminalMethods.ReductionOperations;
 
 import java.util.stream.Stream;
 
