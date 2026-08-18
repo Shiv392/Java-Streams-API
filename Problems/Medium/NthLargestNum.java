@@ -1,4 +1,4 @@
-package Medium/Problems;
+package Medium;
 
 //program to find nth largest element in the list;
 

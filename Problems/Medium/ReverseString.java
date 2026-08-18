@@ -1,9 +1,10 @@
-package Medium/Problems;
+package Medium;
 
 //Reverse each string i nthe list 
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ReverseString{
     public static void main(String[]args){

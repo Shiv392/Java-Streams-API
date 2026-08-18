@@ -1,4 +1,4 @@
-package Medium/Problems;
+package Medium;
 
 //program to group string by their length;
 
@@ -13,7 +13,12 @@ public class GroupStringByLength{
 
         //using groupingBy;
 
-        Map<Integer, List<String>>ans = words.stream().collect(Collectors.groupingBy(String::length));
+        Map<Integer, List<String>>ans = words.stream().
+        collect(
+            Collectors.groupingBy(
+                String::length
+            )
+        );
 
         System.out.println(ans);
 

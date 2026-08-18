@@ -1,8 +1,9 @@
 //program to remove null values 
-package Medium/Problems;
+package Medium;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class RemoveNull{

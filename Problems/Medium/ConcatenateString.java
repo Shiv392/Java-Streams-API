@@ -1,7 +1,6 @@
-package Medium/Problems;
+package Medium;
 
 //return concatenate version of the given string list
-
 import java.util.Arrays;
 import java.util.List;
 

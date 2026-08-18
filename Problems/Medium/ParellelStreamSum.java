@@ -1,4 +1,4 @@
-package Medium/Problems;
+package Medium;
 
 //parellel strems to get the sum of the streams;
 

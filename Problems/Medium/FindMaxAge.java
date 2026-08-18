@@ -1,14 +1,13 @@
-import java.util.*;
+package Medium;
+
 import java.util.stream.Stream;
-import java.util.Arrays;
-import java.util.Set;
-import java.util.List;
-import java.util.Stack;
 import java.util.Comparator;
+import java.util.ArrayList;
+import java.util.List;
 
 //program to find Person name with maximum age ; 
 
-public class Main {
+public class FindMaxAge {
  public static class Person{
   private String name;
   private int age;

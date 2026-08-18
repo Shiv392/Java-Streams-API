@@ -1,9 +1,9 @@
-package Medium/Problems;
+package Medium;
 
 //programe to find employee name with their frequency
 
 import java.util.List;
-import java.util.stream.Stream;
+import java.util.stream.Collectors;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -24,11 +24,14 @@ public class NameFrequency{
         }
 
         //using stream
-        Map<String, Long>frequencyMap = nameList.stream().collect(Collectors.groupingBy(
-          name -> name,
-          Collectors.counting()
-        ));
-        System.out.println(frequencyMap);
-        
+        Map<String, Long>nameMap = nameList.stream()
+        .collect(
+          Collectors.groupingBy(name->
+            name,
+            Collectors.counting()
+          )
+        );
+        System.out.println("Name with their frequency: ");
+        System.out.println(nameMap);
     }
 }

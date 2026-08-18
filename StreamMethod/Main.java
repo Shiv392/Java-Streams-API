@@ -57,6 +57,8 @@ class Main{
 
         //5. converlt string to stream
         String name = "Shiv Soni";
+        //convert string to their ASCII code value like a->65 using chars()
+        //then convert chars() to mapToObj(char) that will return Stream<Character>
         Stream<Character>charStream = name.chars().mapToObj(c -> (char)c);
 
         //covert objcet into stream

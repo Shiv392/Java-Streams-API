@@ -3,8 +3,9 @@ package Medium;
 import java.util.stream.Stream;
 import java.util.List;
 import java.util.Comparator;
+import java.util.ArrayList;
 
-public class Main {
+public class FindMinAge {
  public static class Person{
   private String name;
   private int age;

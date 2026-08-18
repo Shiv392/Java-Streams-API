@@ -1,10 +1,11 @@
 //program to partition numbers with event and odd vlaue 
 
-package Medium/Problems;
+package Medium;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.Map;
 
 public class PartitionNumbers{
     public static void main(String[]args){

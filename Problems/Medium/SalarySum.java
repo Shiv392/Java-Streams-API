@@ -2,6 +2,7 @@ package Medium;
 
 import java.util.stream.Stream;
 import java.util.List;
+import java.util.ArrayList;
 
 public class SalarySum {
  public static class Person{

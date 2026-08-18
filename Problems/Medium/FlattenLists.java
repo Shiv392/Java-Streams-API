@@ -1,4 +1,4 @@
-package Medium/Problems;
+package Medium;
 
 import java.util.List;
 import java.util.Arrays;
@@ -12,6 +12,9 @@ public class FlattenLists{
             Arrays.asList(6, 7, 8, 9)
         );
 
+        //convert listOfLists to streams 
+        //also convert list's list to stream by using method reference 
+        //then collect all data 
         List<Integer>flattenList = listOfLists.stream().flatMap(List::stream)
         .collect(Collectors.toList());
 
