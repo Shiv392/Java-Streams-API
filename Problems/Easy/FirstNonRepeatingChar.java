@@ -1,7 +1,4 @@
-package Easy/Problems;
-
-import java.util.List;
-import java.util.Arrays;
+package Easy;
 
 public class FirstNonRepeatingChar{
     public static void main(String[]args){

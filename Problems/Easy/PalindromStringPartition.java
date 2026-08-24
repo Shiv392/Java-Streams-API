@@ -1,12 +1,13 @@
-package Easy/Problems;
+package Easy;
 
 //progarm to partition with palidrom and non palidrom string 
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.Map;
 
-public class FindPalindromicString{
+public class PalindromStringPartition{
     public static void main(String[]args){
     List<String> words = Arrays.asList("radar", "level", "java", "stream");
 

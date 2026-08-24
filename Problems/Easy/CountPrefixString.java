@@ -1,4 +1,4 @@
-package Easy/Problems;
+package Easy;
 
 import java.util.List;
 import java.util.Arrays;

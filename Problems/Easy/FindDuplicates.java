@@ -1,14 +1,12 @@
 //programe to find duplicates numbers from the given input / list
+package Easy;
 
-package Easy/Problems;
-
-import java.util.stream.Stream;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.List;
 
-public class Main {
+public class FindDuplicates {
     public static void main(String[] args) {
      List<Integer>list = Arrays.asList(1, 2, 3, 2, 4, 5, 3, 6, 1);
 

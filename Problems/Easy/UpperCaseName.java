@@ -1,4 +1,4 @@
-package Easy/Problems;
+package Easy;
 
 //convert each name of the list into their upper case formate
 

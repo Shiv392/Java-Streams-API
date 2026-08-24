@@ -1,10 +1,12 @@
 //program to create a map from the list of string
 //here key would be list vlaue and value would be length of the key
 
-package Easy/Problems;
+package Easy;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class MapFromList{
     public static void main(String[]args){

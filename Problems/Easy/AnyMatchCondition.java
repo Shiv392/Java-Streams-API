@@ -1,4 +1,4 @@
-package Easy/Problems;
+package Easy;
 
 //program to find if any strint matches the condition 
 //check if any string contains "API";
@@ -6,7 +6,7 @@ package Easy/Problems;
 import java.util.List;
 import java.util.Arrays;
 
-public class AnyMatchCondition.java{
+public class AnyMatchCondition{
     public static void main(String[]args){
         //anyMatch return true if any of the stream element matches the condition'
         

@@ -1,4 +1,4 @@
-package Problems.Easy;
+package Easy;
 
 import java.util.List;
 import java.util.stream.Stream;

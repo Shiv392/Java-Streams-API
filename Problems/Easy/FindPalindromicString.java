@@ -1,4 +1,4 @@
-package Easy/Problems;
+package Easy;
 
 //progarm to find all palindromic string 
 

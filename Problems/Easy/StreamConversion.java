@@ -1,8 +1,7 @@
-package Problems.Easy;
+package Easy;
 
 import java.util.Arrays;
 import java.util.Set;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.List;

@@ -1,13 +1,7 @@
-package Easy/Problems;
+package Easy;
 
-import java.util.*;
-import java.util.stream.Stream;
-import java.util.Arrays;
-import java.util.Set;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Stack;
-import java.util.Comparator;
+import java.util.ArrayList;
 
 public class EmployeeSalaryDepartmentAvg {
     public static class Employee{
